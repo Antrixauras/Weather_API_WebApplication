@@ -3,7 +3,7 @@ function cmon(){
 var a=document.getElementById("searc").value;
 console.log(a);
    
-$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+a+"&appid=29199e95755e1016c39d4030d3ceb2e7&units=metric",function(data){
+$.getJSON("https://api.openweathermap.org/data/2.5/weather?q="+a,function(data){
   console.log(data)
   var z = document.getElementsByClassName("icon");
   z[0].style.display="visible";
